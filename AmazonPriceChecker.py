@@ -20,12 +20,11 @@ def send_mail():
     server.starttls() #encyption when establishing connection
     server.ehlo()
 
-    server.login('ibrahimhajimohamed@gmail.com', 'tpsvcukhgxojqtme')
+    server.login()
     subject= 'Price fell down'
     body = 'Check the amazon link  https://www.amazon.com/gp/product/B01KIIQUFW/ref=s9_acsd_al_bw_c_x_4_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-6&pf_rd_r=C9WZAQB28R1NPGEPKNDQ&pf_rd_t=101&pf_rd_p=eec6b011-e8a9-43c7-816b-77061796d8ac&pf_rd_i=17871138011'
     msg = f"subject: {subject}\n\n{body}" #message format
-    server.sendmail('ibrahimhajimohamed@gmail.com',
-        'burhandinamedie@yahoo.com',
+    server.sendmail('',
         msg
         ) # send email from,to,message
     print('HEY EMAIL HAS BEEN SENT')
