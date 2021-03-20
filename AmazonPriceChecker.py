@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 import time
 URL = "https://www.amazon.com/gp/product/B01KIIQUFW/ref=s9_acsd_al_bw_c_x_4_w?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-6&pf_rd_r=C9WZAQB28R1NPGEPKNDQ&pf_rd_t=101&pf_rd_p=eec6b011-e8a9-43c7-816b-77061796d8ac&pf_rd_i=17871138011"
-headers= {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'}
+headers= 
 
 def check_price(): # parses the web for the titel and price. It then compares the price and sends email
     page = requests.get(URL, headers= headers)
